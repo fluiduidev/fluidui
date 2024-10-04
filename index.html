@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<head>
+<title>Project Coral</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/b62363276e.js" crossorigin="anonymous"></script>
+
+<style>
+
+/* Main Styles */
+
+
+body {
+background-color: #46474a;
+margin: 0px;
+width: 100%;
+height: 100%;
+}
+
+header {
+border-radius: 10px;
+color: #000;
+position: -webkit-sticky;
+position: sticky;
+top: 0;
+backdrop-filter: blur(2px);
+font-size: 18px;
+padding: 5px 5px;
+margin: 0px;
+}
+
+
+/* Text Styles */
+
+
+h2 {
+font-family: "Inter", system-ui;
+font-weight: 500;
+font-style: normal;
+margin-left: 10px;
+background: #0069F3;
+background: linear-gradient(to top, #0069F3 0%, #FFFFFF 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+font-size: 30px;
+}
+
+h2:hover {
+font-family: "Inter", system-ui;
+font-weight: 500;
+font-style: normal;
+margin-left: 10px;
+background: #0069F3;
+background: linear-gradient(to top, #FFB6C1 0%, #FFFFFF 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+font-size: 30px;
+}
+ 
+headertext {
+color: #ffffff;
+font-family: "Inter", system-ui;
+font-weight: 400;
+font-style: normal;
+border-radius: 20px;
+padding: 2px 2px;
+transition: 0.1s;
+}
+ 
+headertext:hover {
+font-family: "Inter", system-ui;
+font-weight: 400;
+font-style: normal;
+background: #0069F3;
+background: linear-gradient(to top, #0069F3 0%, #FFFFFF 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+
+text {
+color: #ffffff;
+font-family: "Inter", sans-serif;
+font-weight: 400;
+font-style: normal;
+font-size: 18px;
+margin-left: 10px;
+}
+ 
+a {
+text-decoration: none;
+width: 20%;
+}
+
+texthighlight {
+color: #ffffff;
+font-family: "Inter", sans-serif;
+font-weight: 400;
+font-style: normal;
+font-size: 18px;
+}
+
+texthighlight:hover {
+color: #ffffff;
+font-family: "Inter", sans-serif;
+font-weight: 400;
+font-style: normal;
+font-size: 18px;
+background: #0069F3;
+background: linear-gradient(to top, #0069F3 0%, #FFFFFF 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+textgradient {
+color: #ffffff;
+font-family: "Inter", sans-serif;
+font-weight: 400;
+font-style: normal;
+font-size: 18px;
+background: #0069F3;
+background: linear-gradient(to top, #0069F3 0%, #FFFFFF 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+/* Text Button Styles */
+
+
+coralplus {
+color: #ffffff;
+font-family: "Inter", system-ui;
+font-weight: 400;
+font-style: normal;
+border-radius: 20px;
+padding: 2px 2px;
+transition: 0.1s;
+}
+ 
+coralplus:hover {
+font-family: "Inter", system-ui;
+font-weight: 400;
+font-style: normal;
+background: #0069F3;
+background: linear-gradient(to top, #FFC0CB 0%, #FFFFFF 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+ 
+join {
+color: #ffffff;
+font-family: "Inter", system-ui;
+font-weight: 400;
+font-style: normal;
+border-radius: 20px;
+padding: 2px 2px;
+transition: 0.1s;
+}
+ 
+join:hover {
+font-family: "Inter", system-ui;
+font-weight: 400;
+font-style: normal;
+background: #0069F3;
+background: linear-gradient(to top, #0069F3 0%, #FFFFFF 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+
+/* Button Styles */
+
+
+download {
+color: #ffffff;
+font-family: "Inter", system-ui;
+font-weight: 400;
+font-style: normal;
+border-radius: 20px;
+padding: 2px 2px;
+transition: 0.1s;
+}
+ 
+download:hover {
+font-family: "Inter", system-ui;
+font-weight: 400;
+font-style: normal;
+background: #0069F3;
+background: linear-gradient(to top, #FFC0CB 0%, #FFFFFF 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+  
+button {
+color: #ffffff;
+background-color: #5e5e5e;
+border: 2px solid #5e5e5e;
+font-family: "Inter", system-ui;
+font-weight: 400;
+font-style: normal;
+border-radius: 20px;
+padding: 10px 20px;
+font-size: 16px;
+opacity: 0.8;
+transition: 0.1s;
+margin-left: 10px;
+}
+ 
+button:hover {
+background: #0069F3;
+background: linear-gradient(to top, #0069F3 0%, #FFFFFF 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-color: #747474;
+border: 2px solid #5e5e5e;
+border-radius: 20px;
+opacity: 0.8;
+}
+
+
+/* Box Styles */
+
+
+input {
+color: #ffffff;
+background-color: #46474a;
+border: 2px solid #5e5e5e;
+font-family: "Inter", system-ui;
+font-weight: 400;
+font-style: normal;
+border-radius: 20px;
+padding: 10px 20px;
+font-size: 16px;
+opacity: 0.8;
+transition: 0.1s;
+margin-left: 10px;
+}
+
+input:hover {
+color: #ffffff;
+background-color: #46474a;
+border: 2px solid #5e5e5e;
+font-family: "Inter", system-ui;
+font-weight: 400;
+font-style: normal;
+border-radius: 20px;
+padding: 10px 20px;
+font-size: 16px;
+opacity: 0.8;
+transition: 0.1s;
+margin-left: 10px;
+background: #0069F3;
+background: linear-gradient(to top, #0069F3 0%, #FFFFFF 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+</style>
+</head>
+
+<html>
+<body>
+
+<header>
+<a href="https://projectcoral.xyz/"><headertext><i class="fa-solid fa-computer"></i> Project Coral</headertext></a>
+<a href="https://projectcoral.xyz/coralplus"><coralplus><i class="fa-solid fa-leaf"></i> Coral+</coralplus></a>
+</header>
+
+<a href="https://projectcoral.xyz/whitelist-request"><h2>Example<br>title</h2></a>
+
+<text>No description added yet.</text>
+<br><br>
+<a href="https://projectcoral.xyz/"><button><i class="fa-solid fa-user-plus"></i> Join today</button></a>
+<a href="https://projectcoral.xyz/"><button><i class="fa-solid fa-download"></i> Download CoralChassis</button></a>
+
+<br><br>
+
+<h2>Example header, changes gradient colour on hover.</h2>
+<text>enter text</text>
+<br><br>
+<texthighlight>  changes colour on hover</texthighlight>
+<br><br>
+<textgradient>  gradient text</textgradient>
+<br><br>
+<input type="text" placeholder="enter some text">
+<br><br>
+
+<h2>Headphone Warning</h2>
+<text>Project Coral uses <a href="https://projectcoral.xyz/"><texthighlight>Realistic Audio Systems</texthighlight></a> which could damage the hearing of users who use headphones on full volume. Do not play on full volume.</text>
+
+
+<h2>Proximity Chat Guidelines</h2>
+<text><a href="https://projectcoral.xyz/"><texthighlight>Proximity Chat</texthighlight></a> has recently been added to Project Coral. Therefore, we have set some guidelines on how to safely use it. You can view these below.</text>
+<br><br>
+<a href="https://projectcoral.xyz/"><button>View Guidelines</button></a>
+
+</body>
+</html>
