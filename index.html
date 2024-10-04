@@ -48,6 +48,7 @@ background: linear-gradient(to top, #0069F3 0%, #FFFFFF 100%);
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
 font-size: 30px;
+transition: 0.5s;
 }
 
 h2:hover {
@@ -69,17 +70,14 @@ font-weight: 400;
 font-style: normal;
 border-radius: 20px;
 padding: 2px 2px;
-transition: 0.1s;
+transition: 0.2s;
 }
  
 headertext:hover {
 font-family: "Inter", system-ui;
 font-weight: 400;
 font-style: normal;
-background: #0069F3;
-background: linear-gradient(to top, #0069F3 0%, #FFFFFF 100%);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
+color: #0069f3;
 }
 
 
@@ -103,30 +101,15 @@ font-family: "Inter", sans-serif;
 font-weight: 400;
 font-style: normal;
 font-size: 18px;
+transition: 0.2s;
 }
 
 texthighlight:hover {
-color: #ffffff;
+color: #FFB6C1;
 font-family: "Inter", sans-serif;
 font-weight: 400;
 font-style: normal;
 font-size: 18px;
-background: #0069F3;
-background: linear-gradient(to top, #0069F3 0%, #FFFFFF 100%);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-}
-
-textgradient {
-color: #ffffff;
-font-family: "Inter", sans-serif;
-font-weight: 400;
-font-style: normal;
-font-size: 18px;
-background: #0069F3;
-background: linear-gradient(to top, #0069F3 0%, #FFFFFF 100%);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
 }
 
 /* Text Button Styles */
@@ -139,62 +122,19 @@ font-weight: 400;
 font-style: normal;
 border-radius: 20px;
 padding: 2px 2px;
-transition: 0.1s;
+transition: 0.2s;
 }
  
 coralplus:hover {
 font-family: "Inter", system-ui;
 font-weight: 400;
 font-style: normal;
-background: #0069F3;
-background: linear-gradient(to top, #FFC0CB 0%, #FFFFFF 100%);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
+color: #FFB6C1;
 }
- 
-join {
-color: #ffffff;
-font-family: "Inter", system-ui;
-font-weight: 400;
-font-style: normal;
-border-radius: 20px;
-padding: 2px 2px;
-transition: 0.1s;
-}
- 
-join:hover {
-font-family: "Inter", system-ui;
-font-weight: 400;
-font-style: normal;
-background: #0069F3;
-background: linear-gradient(to top, #0069F3 0%, #FFFFFF 100%);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-}
+
 
 
 /* Button Styles */
-
-
-download {
-color: #ffffff;
-font-family: "Inter", system-ui;
-font-weight: 400;
-font-style: normal;
-border-radius: 20px;
-padding: 2px 2px;
-transition: 0.1s;
-}
- 
-download:hover {
-font-family: "Inter", system-ui;
-font-weight: 400;
-font-style: normal;
-background: #0069F3;
-background: linear-gradient(to top, #FFC0CB 0%, #FFFFFF 100%);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-}
 
   
 button {
@@ -207,24 +147,18 @@ font-style: normal;
 border-radius: 20px;
 padding: 10px 20px;
 font-size: 16px;
-opacity: 0.8;
-transition: 0.1s;
+transition: 0.5s;
 margin-left: 10px;
 }
  
 button:hover {
-background: #0069F3;
-background: linear-gradient(to top, #0069F3 0%, #FFFFFF 100%);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-background-color: #747474;
+background-color: #46474a;
 border: 2px solid #5e5e5e;
 border-radius: 20px;
-opacity: 0.8;
 }
 
 
-/* Box Styles */
+/* Input Styles */
 
 
 input {
@@ -238,7 +172,7 @@ border-radius: 20px;
 padding: 10px 20px;
 font-size: 16px;
 opacity: 0.8;
-transition: 0.1s;
+transition: 0.5s;
 margin-left: 10px;
 }
 
@@ -253,7 +187,7 @@ border-radius: 20px;
 padding: 10px 20px;
 font-size: 16px;
 opacity: 0.8;
-transition: 0.1s;
+transition: 0.5s;
 margin-left: 10px;
 background: #0069F3;
 background: linear-gradient(to top, #0069F3 0%, #FFFFFF 100%);
@@ -261,6 +195,23 @@ background: linear-gradient(to top, #0069F3 0%, #FFFFFF 100%);
 -webkit-text-fill-color: transparent;
 }
 
+
+/* Other CSS Stuff */
+
+.collapsible {
+width: 100%;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.content {
+padding: 10px;
+  display: none;
+  overflow: hidden;
+  background-color: #55555;
+}
 </style>
 </head>
 
@@ -300,5 +251,30 @@ background: linear-gradient(to top, #0069F3 0%, #FFFFFF 100%);
 <br><br>
 <a href="https://projectcoral.xyz/"><button>View Guidelines</button></a>
 
+<h2>Collapsible Set:</h2>
+<button type="button" class="collapsible">Open Section 1</button>
+<div class="content">
+  <ptext>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+<br><br>
+<br><br>
 </body>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+
 </html>
