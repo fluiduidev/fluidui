@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <head>
-<title>Project Coral</title>
+<title>FluidUI</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -8,6 +8,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 <script src="https://kit.fontawesome.com/b62363276e.js" crossorigin="anonymous"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
  
  
 <style>
@@ -26,7 +28,19 @@ border-radius: 10px;
 position: -webkit-sticky;
 position: sticky;
 top: 0;
-backdrop-filter: blur(2px);
+backdrop-filter: blur(5px);
+font-size: 18px;
+padding: 5px 5px;
+display: block;
+margin: auto;
+}
+
+footer {
+border-radius: 10px;
+position: -webkit-sticky;
+position: sticky;
+bottom: 0;
+backdrop-filter: blur(5px);
 font-size: 18px;
 padding: 5px 5px;
 display: block;
@@ -58,7 +72,7 @@ font-size: 30px;
 .headertext {
 color: #ffffff;
 font-family: "Inter", system-ui;
-font-weight: 400;
+font-weight: 700;
 font-style: normal;
 border-radius: 20px;
 padding: 2px 2px;
@@ -66,6 +80,7 @@ transition: 0.2s;
 display: block;
 margin: 1px;
 text-align: center;
+font-size: 35px;
 }
  
 p {
@@ -315,39 +330,84 @@ width: 95%;
  
 <html>
 <body>
+
 <header>
-<headertext type="button" class="headertext">Project Pixel.</headertext>
+<headertext type="button" class="headertext"><i class="fa-solid fa-hat-cowboy"></i></headertext>
 <div class="menucontent">
-<a href="https://projectcoral.xyz/"><texthighlight>Home</texthighlight></a>
+<a href="https://projectcoral.xyz/"><texthighlight><ion-icon name="home"></ion-icon> Home</texthighlight></a>
+
 <br><br>
-<a href="https://projectcoral.xyz/"><texthighlight>Products</texthighlight></a>
+
+<a href="https://projectcoral.xyz/"><texthighlight><ion-icon name="bag-remove"></ion-icon> Products</texthighlight></a>
+
 <br><br>
-<a href="https://projectcoral.xyz/"><texthighlight>Design your own</texthighlight></a>
+
+<a href="https://projectcoral.xyz/"><texthighlight><ion-icon name="brush"></ion-icon> Design your own</texthighlight></a>
 </div>
 </header>
  
-<h2>Welcome to Project Pixel.</h2>
-<p>
-  Project Pixel is an exciting Minecraft initiative where players can watch talented builders create a unique city for each biome. This engaging experience showcases a variety of architectural styles tailored to the distinct environments, from vibrant desert oases to lush forest towns. Participants can follow along as builders craft these diverse urban landscapes, gaining inspiration and learning new techniques while celebrating the beauty of each biome in the beloved Minecraft universe.
-</p>
+<h2>Your go-to destination for UI projects.</h2>
+<p><br>
+FluidUI is a dynamic UI design company dedicated to crafting seamless user experiences for the web. With a focus on innovative design principles and the latest technological trends, we specialize in creating intuitive interfaces that not only engage users but also drive conversions. Our team of talented designers and developers collaborates closely with clients to understand their unique needs, ensuring that every project reflects their brand identity while enhancing usability.
+<br><br>
+At FluidUI, we believe that effective design goes beyond aesthetics. Our approach centers around user-centered design, where we prioritize the needs and behaviors of end-users in every project. We employ a comprehensive design process that includes research, prototyping, and user testing, enabling us to iterate on ideas and refine our solutions. Whether it's a sleek corporate website, an interactive e-commerce platform, or a captivating landing page, we are committed to delivering high-quality designs that resonate with users.
+<br><br>
+Our portfolio showcases a diverse range of projects, highlighting our versatility and expertise across various industries. We leverage the latest design tools and methodologies, ensuring our interfaces are not only visually appealing but also functional and responsive. At FluidUI, we understand that the digital landscape is constantly evolving, and we pride ourselves on staying ahead of the curve, continually adapting our strategies to meet emerging trends and technologies. Let us help you create a web experience that flows effortlessly and captivates your audience.</p>
 <br><br>
  
 <h2>Frequently asked Questions.</h2>
-<button type="button" class="collapsible">Website Changelog?</button>
+
+<button type="button" class="collapsible">What services do FluidUI offer?</button>
 <div class="content">
-<p>As Project Pixel is constantly growing, we have decided to release a changelog for every update we do to our website. You can find this changelog below by clicking the Changelog button.
-<br><br>
-<a href="https://projectcoral.xyz/"><sbutton>Changelog</sbutton></a>
+<p>
+FluidUI specializes in UI design for web applications, including website design, e-commerce platforms, landing pages, and interactive prototypes. We also provide user experience (UX) consulting, usability testing, and design audits.
 </p>
 </div>
- 
-<br><br>
-<a href="https://projectcoral.xyz/"><button>Standard Button</button></a>
-<br>
-<a href="https://projectcoral.xyz/"><sbutton>Special Button</sbutton></a>
-<br><br>
-<input placeholder="enter your email... "></input>
 
+<br>
+
+<button type="button" class="collapsible">How does your design process work?</button>
+<div class="content">
+<p>
+Our design process is user-centered and consists of several stages: research and discovery, wireframing, prototyping, and user testing. We collaborate closely with clients throughout the process to ensure the final product aligns with their goals and user needs.
+</p>
+</div>
+
+<br>
+
+<button type="button" class="collapsible">Can you work with existing branding guidelines?</button>
+<div class="content">
+<p>
+Absolutely! We can incorporate your existing branding guidelines into our designs to ensure consistency across all platforms. Our goal is to enhance your brand identity while creating an engaging user experience.
+</p>
+</div>
+<br>
+
+<button type="button" class="collapsible">How long does a typical project take?</button>
+<div class="content">
+<p>
+Project timelines vary based on complexity and scope. On average, a standard web UI design project takes between 4 to 8 weeks. We’ll provide a detailed timeline during initial contact.
+</p>
+</div>
+<br>
+
+<button type="button" class="collapsible">How do you ensure your designs are user-friendly?</button>
+<div class="content">
+<p>
+All of our products are responsive. This means that they scale to all devices and screen sizes.
+</p>
+</div>
+<br>
+
+<button type="button" class="collapsible">How do I get started with FluidUI?</button>
+<div class="content">
+<p>
+Thats easy! You can join our Discord Server and contact one of our Sales Representitives to schedule contact with a UI designer (web developer).
+</p>
+</div>
+<br>
+
+<a href="https://projectcoral.xyz/"><sbutton>Special Button</sbutton></a>
 
 </body>
  
