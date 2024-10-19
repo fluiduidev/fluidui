@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <head>
 <title>Project Coral</title>
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -9,61 +8,54 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 <script src="https://kit.fontawesome.com/b62363276e.js" crossorigin="anonymous"></script>
-
+ 
+ 
 <style>
-
+ 
 /* Main Styles */
-
-
+ 
 body {
-background-color: #46474a;
+background-color: #1a1a1a;
 margin: 0px;
 width: 100%;
 height: 100%;
 }
-
+ 
 header {
 border-radius: 10px;
-color: #000;
 position: -webkit-sticky;
 position: sticky;
 top: 0;
 backdrop-filter: blur(2px);
 font-size: 18px;
 padding: 5px 5px;
-margin: 0px;
+display: block;
+margin: auto;
 }
-
-
+ 
 /* Text Styles */
-
-
+ 
 h2 {
+color: #ffffff;
 font-family: "Inter", system-ui;
 font-weight: 500;
 font-style: normal;
 margin-left: 10px;
-background: #0069F3;
-background: linear-gradient(to top, #0069F3 0%, #FFFFFF 100%);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
 font-size: 30px;
-transition: 0.5s;
+transition: 0.2s;
+text-align: center;
 }
-
+ 
 h2:hover {
+color: #005039;
 font-family: "Inter", system-ui;
 font-weight: 500;
 font-style: normal;
 margin-left: 10px;
-background: #0069F3;
-background: linear-gradient(to top, #FFB6C1 0%, #FFFFFF 100%);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
 font-size: 30px;
 }
  
-headertext {
+.headertext {
 color: #ffffff;
 font-family: "Inter", system-ui;
 font-weight: 400;
@@ -71,17 +63,12 @@ font-style: normal;
 border-radius: 20px;
 padding: 2px 2px;
 transition: 0.2s;
+display: block;
+margin: 1px;
+text-align: center;
 }
  
-headertext:hover {
-font-family: "Inter", system-ui;
-font-weight: 400;
-font-style: normal;
-color: #0069f3;
-}
-
-
-text {
+p {
 color: #ffffff;
 font-family: "Inter", sans-serif;
 font-weight: 400;
@@ -89,181 +76,284 @@ font-style: normal;
 font-size: 18px;
 margin-left: 10px;
 }
- 
 a {
 text-decoration: none;
 width: 20%;
 }
-
+ 
 texthighlight {
 color: #ffffff;
 font-family: "Inter", sans-serif;
-font-weight: 400;
+font-weight: 500;
 font-style: normal;
 font-size: 18px;
 transition: 0.2s;
 }
-
+ 
 texthighlight:hover {
-color: #FFB6C1;
+color: #a37e2c;
 font-family: "Inter", sans-serif;
-font-weight: 400;
+font-weight: 500;
 font-style: normal;
 font-size: 18px;
 }
 
-/* Text Button Styles */
-
-
-coralplus {
+ 
+/* Button Styles */
+ 
+ 
+button {
 color: #ffffff;
+background-color: #005039;
+border: 2px solid #5e5e5e;
+font-family: "Inter", system-ui;
+font-weight: 400;
+font-style: normal;
+border-radius: 20px;
+padding: 10px 20px;
+font-size: 16px;
+transition: 0.2s;
+margin-left: 10px;
+display: block;
+margin: auto;
+width: 95%;
+}
+ 
+button:hover {
+color: #005039;
+background-color: #c0c0c0;
+border: 2px solid #005039;
+border-radius: 20px;
+margin-left: 10px;
+margin-right: 10px;
+display: block;
+margin: auto;
+width: 95%;
+}
+
+sbutton {
+color: #ffffff;
+background-color: #a37e2c;
+border: 2px solid #5e5e5e;
+font-family: "Inter", system-ui;
+font-weight: 600;
+font-style: normal;
+border-radius: 20px;
+padding: 10px 20px;
+font-size: 16px;
+transition: 0.2s;
+margin-left: 10px;
+display: block;
+margin: auto;
+width: 93%;
+text-align: center;
+}
+
+sbutton:hover {
+color: #005039;
+background-color: #c0c0c0;
+border: 2px solid #5e5e5e;
+font-family: "Inter", system-ui;
+font-weight: 600;
+font-style: normal;
+border-radius: 20px;
+padding: 10px 20px;
+font-size: 16px;
+transition: 0.2s;
+margin-left: 10px;
+display: block;
+margin: auto;
+width: 93%;
+text-align: center;
+}
+ 
+/* Input Styles */
+ 
+input {
+color: #ffffff;
+background-color: #005039;
+border: 2px solid #5e5e5e;
+font-family: "Inter", system-ui;
+font-weight: 400;
+font-style: normal;
+border-radius: 20px;
+padding: 10px 20px;
+font-size: 16px;
+transition: 0.2s;
+margin-left: 10px;
+display: block;
+margin: auto;
+width: 93%;
+}
+ 
+input:hover {
+color: #005039;
+background-color: #c0c0c0;
+border: 2px solid #005039;
+border-radius: 20px;
+margin-left: 10px;
+margin-right: 10px;
+display: block;
+margin: auto;
+width: 93%;
+}
+ 
+ 
+/* Other CSS Stuff */
+ 
+.collapsible {
+color: #ffffff;
+background-color: #005039;
+border: 2px solid #5e5e5e;
+font-family: "Inter", system-ui;
+font-weight: 400;
+font-style: normal;
+border-radius: 20px;
+padding: 10px 20px;
+font-size: 16px;
+transition: 0.2s;
+margin-left: 10px;
+display: block;
+margin: auto;
+width: 95%;
+}
+ 
+.collapsible:hover {
+color: #005039;
+background-color: #c0c0c0;
+border: 2px solid #005039;
+border-radius: 20px;
+margin-left: 10px;
+margin-right: 10px;
+display: block;
+margin: auto;
+width: 95%;
+}
+ 
+.content {
+color: #ffffff;
+background-color: #005039;
+border: 2px solid #5e5e5e;
+font-family: "Inter", system-ui;
+font-weight: 400;
+font-style: normal;
+padding: 10px;
+display: none;
+overflow: hidden;
+border-radius: 10px;
+margin-left: 10px; 
+margin-right: 10px;
+margin-top: 10px;
+font-size: 17px;
+margin: auto;
+width: 95%;
+margin-top: 20px;
+}
+ 
+ 
+.active {
+color: #ffffff;
+background-color: #005039;
+border: 2px solid #5e5e5e;
+font-family: "Inter", system-ui;
+font-weight: 400;
+font-style: normal;
+border-radius: 20px;
+padding: 10px 20px;
+font-size: 16px;
+transition: 0.2s;
+margin-left: 10px;
+display: block;
+margin: auto;
+width: 95%;
+}
+
+.headertext:hover {
+color: #005039;
 font-family: "Inter", system-ui;
 font-weight: 400;
 font-style: normal;
 border-radius: 20px;
 padding: 2px 2px;
 transition: 0.2s;
+display: block;
+margin: 1px;
+text-align: center;
+}
+
+.menuopen {
+color: #005039;
+font-family: "Inter", system-ui;
+font-weight: 400;
+font-style: normal;
+border-radius: 20px;
+padding: 2px 2px;
+transition: 0.2s;
+display: block;
+margin: 1px;
+text-align: center;
 }
  
-coralplus:hover {
-font-family: "Inter", system-ui;
-font-weight: 400;
-font-style: normal;
-color: #FFB6C1;
-}
-
-
-
-/* Button Styles */
-
-  
-button {
+.menucontent {
+border: 2px solid #5e5e5e;
 color: #ffffff;
-background-color: #5e5e5e;
-border: 2px solid #5e5e5e;
 font-family: "Inter", system-ui;
 font-weight: 400;
 font-style: normal;
-border-radius: 20px;
-padding: 10px 20px;
-font-size: 16px;
-transition: 0.5s;
-margin-left: 10px;
-}
- 
-button:hover {
-background-color: #46474a;
-border: 2px solid #5e5e5e;
-border-radius: 20px;
-}
-
-
-/* Input Styles */
-
-
-input {
-color: #ffffff;
-background-color: #46474a;
-border: 2px solid #5e5e5e;
-font-family: "Inter", system-ui;
-font-weight: 400;
-font-style: normal;
-border-radius: 20px;
-padding: 10px 20px;
-font-size: 16px;
-opacity: 0.8;
-transition: 0.5s;
-margin-left: 10px;
-}
-
-input:hover {
-color: #ffffff;
-background-color: #46474a;
-border: 2px solid #5e5e5e;
-font-family: "Inter", system-ui;
-font-weight: 400;
-font-style: normal;
-border-radius: 20px;
-padding: 10px 20px;
-font-size: 16px;
-opacity: 0.8;
-transition: 0.5s;
-margin-left: 10px;
-background: #0069F3;
-background: linear-gradient(to top, #0069F3 0%, #FFFFFF 100%);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-}
-
-
-/* Other CSS Stuff */
-
-.collapsible {
-width: 100%;
-}
-
-.active, .collapsible:hover {
-  background-color: #555;
-}
-
-.content {
 padding: 10px;
-  display: none;
-  overflow: hidden;
-  background-color: #55555;
+display: none;
+overflow: hidden;
+border-radius: 10px;
+font-size: 17px;
+margin: auto;
+width: 95%;
 }
 </style>
+ 
 </head>
-
+ 
+ 
 <html>
 <body>
-
 <header>
-<a href="https://projectcoral.xyz/"><headertext><i class="fa-solid fa-computer"></i> Project Coral</headertext></a>
-<a href="https://projectcoral.xyz/coralplus"><coralplus><i class="fa-solid fa-leaf"></i> Coral+</coralplus></a>
-</header>
-
-<a href="https://projectcoral.xyz/whitelist-request"><h2>Example<br>title</h2></a>
-
-<text>No description added yet.</text>
+<headertext type="button" class="headertext">Project Pixel.</headertext>
+<div class="menucontent">
+<a href="https://projectcoral.xyz/"><texthighlight>Home</texthighlight></a>
 <br><br>
-<a href="https://projectcoral.xyz/"><button><i class="fa-solid fa-user-plus"></i> Join today</button></a>
-<a href="https://projectcoral.xyz/"><button><i class="fa-solid fa-download"></i> Download CoralChassis</button></a>
-
+<a href="https://projectcoral.xyz/"><texthighlight>Products</texthighlight></a>
 <br><br>
-
-<h2>Example header, changes gradient colour on hover.</h2>
-<text>enter text</text>
-<br><br>
-<texthighlight>  changes colour on hover</texthighlight>
-<br><br>
-<textgradient>  gradient text</textgradient>
-<br><br>
-<input type="text" placeholder="enter some text">
-<br><br>
-
-<h2>Headphone Warning</h2>
-<text>Project Coral uses <a href="https://projectcoral.xyz/"><texthighlight>Realistic Audio Systems</texthighlight></a> which could damage the hearing of users who use headphones on full volume. Do not play on full volume.</text>
-
-
-<h2>Proximity Chat Guidelines</h2>
-<text><a href="https://projectcoral.xyz/"><texthighlight>Proximity Chat</texthighlight></a> has recently been added to Project Coral. Therefore, we have set some guidelines on how to safely use it. You can view these below.</text>
-<br><br>
-<a href="https://projectcoral.xyz/"><button>View Guidelines</button></a>
-
-<h2>Collapsible Set:</h2>
-<button type="button" class="collapsible">Open Section 1</button>
-<div class="content">
-  <ptext>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<a href="https://projectcoral.xyz/"><texthighlight>Design your own</texthighlight></a>
 </div>
+</header>
+ 
+<h2>Welcome to Project Pixel.</h2>
+<p>
+  Project Pixel is an exciting Minecraft initiative where players can watch talented builders create a unique city for each biome. This engaging experience showcases a variety of architectural styles tailored to the distinct environments, from vibrant desert oases to lush forest towns. Participants can follow along as builders craft these diverse urban landscapes, gaining inspiration and learning new techniques while celebrating the beauty of each biome in the beloved Minecraft universe.
+</p>
 <br><br>
+ 
+<h2>Frequently asked Questions.</h2>
+<button type="button" class="collapsible">Website Changelog?</button>
+<div class="content">
+<p>As Project Pixel is constantly growing, we have decided to release a changelog for every update we do to our website. You can find this changelog below by clicking the Changelog button.
 <br><br>
-</body>
+<a href="https://projectcoral.xyz/"><sbutton>Changelog</sbutton></a>
+</p>
+</div>
+ 
+<br><br>
+<a href="https://projectcoral.xyz/"><button>Standard Button</button></a>
+<br>
+<a href="https://projectcoral.xyz/"><sbutton>Special Button</sbutton></a>
+<br><br>
+<input placeholder="enter your email... "></input>
 
+
+</body>
+ 
 <script>
 var coll = document.getElementsByClassName("collapsible");
 var i;
-
 for (i = 0; i < coll.length; i++) {
   coll[i].addEventListener("click", function() {
     this.classList.toggle("active");
@@ -276,5 +366,20 @@ for (i = 0; i < coll.length; i++) {
   });
 }
 </script>
-
+ 
+<script>
+var coll = document.getElementsByClassName("headertext");
+var i;
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("menuopen");
+    var menucontent = this.nextElementSibling;
+    if (menucontent.style.display === "block") {
+      menucontent.style.display = "none";
+    } else {
+      menucontent.style.display = "block";
+    }
+  });
+}
+</script>
 </html>
