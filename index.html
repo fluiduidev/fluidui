@@ -9,10 +9,21 @@
 
 <!DOCTYPE html>
 <head>
- 
-<title>goofy aah</title>
- 
+
+<title>Project Clearwood</title>
+
+<meta charset="UTF-8">
+<meta name="description" content="Test Description">
+<meta name="keywords" content="Test Keyword">
+<meta name="author" content="Test Author">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
@@ -20,464 +31,464 @@
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
  
+
 <style>
- 
-
-/* Main Styles */
- 
-
-body {
-background-color: #1a1a1a;
-margin: 0px;
-width: 100%;
-height: 100%;
-}
- 
-header {
-border-radius: 10px;
-position: -webkit-sticky;
-position: sticky;
-top: 0;
-backdrop-filter: blur(5px);
-font-size: 18px;
-padding: 5px 5px;
-display: block;
-margin: auto;
-}
- 
-footer {
-border-radius: 10px;
-position: -webkit-sticky;
-position: sticky;
-bottom: 0;
-backdrop-filter: blur(5px);
-font-size: 18px;
-padding: 5px 5px;
-display: block;
-margin: auto;
-}
- 
-
-/* Text Styles */
- 
-
-h2 {
-color: #ffffff;
-font-family: "Inter", system-ui;
-font-weight: 500;
-font-style: normal;
-margin-left: 10px;
-font-size: 30px;
-transition: 0.2s;
-text-align: center;
-cursor: default;
-}
- 
-h2:hover {
-color: #005039;
-font-family: "Inter", system-ui;
-font-weight: 500;
-font-style: normal;
-margin-left: 10px;
-font-size: 30px;
-}
- 
-.headertext {
-color: #ffffff;
-font-family: "Inter", system-ui;
-font-weight: 500;
-font-style: normal;
-border-radius: 20px;
-padding: 2px 2px;
-transition: 0.2s;
-display: block;
-margin: 1px;
-text-align: center;
-font-size: 35px;
-text-decoration: none;
-cursor: pointer;
-}
- 
-.headertext:hover {
-color: #005039;
-font-family: "Inter", system-ui;
-font-weight: 500;
-font-style: normal;
-border-radius: 20px;
-padding: 2px 2px;
-transition: 0.2s;
-display: block;
-margin: 1px;
-text-align: center;
-text-decoration: none;
-}
- 
-p {
-color: #ffffff;
-font-family: "Inter", sans-serif;
-font-weight: 400;
-font-style: normal;
-font-size: 18px;
-margin-left: 10px;
-text-decoration: none;
-cursor: default;
-}
- 
-a {
-text-decoration: none;
-width: 20%;
-cursor: default;
-}
- 
-texthighlight {
-color: #ffffff;
-font-family: "Inter", sans-serif;
-font-weight: 500;
-font-style: normal;
-font-size: 18px;
-transition: 0.2s;
-text-decoration: underline;
-text-decoration-color: #c0c0c0;
-cursor: default;
-}
- 
-texthighlight:hover {
-color: #005039;
-font-family: "Inter", sans-serif;
-font-weight: 500;
-font-style: normal;
-font-size: 18px;
-text-decoration: underline;
-text-decoration-color: #005039;
-}
- 
-headerlink {
-color: #ffffff;
-font-family: "Inter", sans-serif;
-font-weight: 500;
-font-style: normal;
-font-size: 18px;
-transition: 0.2s;
-cursor: pointer;
-}
- 
-headerlink:hover {
-color: #005039;
-font-family: "Inter", sans-serif;
-font-weight: 500;
-font-style: normal;
-font-size: 18px;
-}
- 
-/* Button Styles */
- 
-
-button {
-color: #ffffff;
-background-color: #005039;
-border: 2px solid #5e5e5e;
-border-radius: 20px;
-font-family: "Inter", system-ui;
-font-weight: 400;
-font-style: normal;
-padding: 10px 20px;
-font-size: 16px;
-transition: 0.2s;
-margin-left: 10px;
-display: block;
-margin: auto;
-width: 90%;
-cursor: pointer;
-}
- 
-button:hover {
-color: #005039;
-background-color: #c0c0c0;
-border: 2px solid #005039;
-border-radius: 20px;
-font-family: "Inter", system-ui;
-font-weight: 400;
-font-style: normal;
-padding: 10px 20px;
-font-size: 16px;
-transition: 0.2s;
-margin-left: 10px;
-display: block;
-margin: auto;
-width: 90%;
-}
- 
-
-/* Input Styles */
- 
-
-input {
-color: #005039;
-background-color: #c0c0c0;
-border: 2px solid #005039;
-font-family: "Inter", system-ui;
-font-weight: 500;
-font-style: normal;
-border-radius: 20px;
-padding: 10px 20px;
-font-size: 16px;
-transition: 0.2s;
-margin-left: 10px;
-display: block;
-margin: auto;
-width: 80%;
-}
-
-input:hover {
-color: #ffffff;
-background-color: #005039;
-border: 2px solid #c0c0c0;
-font-family: "Inter", system-ui;
-font-weight: 400;
-font-style: normal;
-border-radius: 20px;
-margin-left: 10px;
-margin-right: 10px;
-display: block;
-margin: auto;
-width: 80%;
-}
 
 
-/* Collapsible Menu Styles */
+   /* Main Styles */
 
 
-.collapsible {
-color: #ffffff;
-background-color: #005039;
-border: 2px solid #5e5e5e;
-font-family: "Inter", system-ui;
-font-weight: 400;
-font-style: normal;
-border-radius: 20px;
-padding: 10px 20px;
-font-size: 16px;
-transition: 0.2s;
-margin-left: 10px;
-display: block;
-margin: auto;
-width: 90%;
-}
-
-.collapsible:hover {
-color: #005039;
-background-color: #c0c0c0;
-border: 2px solid #005039;
-border-radius: 20px;
-margin-left: 10px;
-margin-right: 10px;
-display: block;
-margin: auto;
-width: 90%;
-}
-
-.content {
-color: #ffffff;
-background-color: #005039;
-border: 2px solid #5e5e5e;
-font-family: "Inter", system-ui;
-font-weight: 400;
-font-style: normal;
-padding: 10px;
-display: none;
-overflow: hidden;
-border-radius: 10px;
-margin-left: 10px; 
-margin-right: 10px;
-margin-top: 10px;
-font-size: 17px;
-margin: auto;
-width: 95%;
-margin-top: 20px;
-}
- 
-.active {
-color: #ffffff;
-background-color: #005039;
-border: 2px solid #5e5e5e;
-font-family: "Inter", system-ui;
-font-weight: 400;
-font-style: normal;
-border-radius: 20px;
-padding: 10px 20px;
-font-size: 16px;
-transition: 0.2s;
-margin-left: 10px;
-display: block;
-margin: auto;
-width: 95%;
-}
- 
-.menuopen {
-color: #005039;
-font-family: "Inter", system-ui;
-font-weight: 400;
-font-style: normal;
-border-radius: 20px;
-padding: 2px 2px;
-transition: 0.2s;
-display: block;
-margin: 1px;
-text-align: center;
-}
- 
-.menucontent {
-border: 2px solid #5e5e5e;
-color: #ffffff;
-font-family: "Inter", system-ui;
-font-weight: 400;
-font-style: normal;
-padding: 10px;
-display: none;
-overflow: hidden;
-border-radius: 10px;
-font-size: 17px;
-margin: auto;
-width: 95%;
-}
+   body {
+   color: #c0c0c0;
+   font-family: "Inter", system-ui;
+   font-weight: 300;
+   font-style: normal;
+   background-color: #1a1a1a;
+   margin: 0px;
+   width: 100%;
+   height: 100%;
+   }
 
 
-/* Image Styles */
+   /* Header & Footer Styles */
 
 
-img {
-border-radius: 10px;
-display: block;
-margin: auto;
-height: 30%;
-width: 30%;
-}
+   header {
+   border-radius: 10px;
+   position: -webkit-sticky;
+   position: sticky;
+   top: 0;
+   backdrop-filter: blur(2px);
+   font-size: 18px;
+   padding: 10px 10px;
+   margin: auto;
+   }
+
+   footer {
+   border-radius: 10px;
+   position: -webkit-sticky;
+   position: sticky;
+   bottom: 0;
+   backdrop-filter: blur(5px);
+   font-size: 18px;
+   padding: 5px 5px;
+   display: block;
+   margin: auto;
+   }
 
 
-/* Popup Box Styles */
+   /* Text Styles */
 
 
-.modal-content {
-color: #ffffff;
-background-color: #1a1a1a;
-margin: auto;
-padding: 20px;
-border: 1px solid #c0c0c0;
-border-radius: 10px;
-width: 80%;
-}
- 
-.close {
-color: #ffffff;
-float: right;
-font-size: 28px;
-font-weight: bold;
-}
- 
-.close:hover,
-.close:focus {
-color: #005039;
-text-decoration: none;
-cursor: pointer;
-}
- 
-.modal {
-display: none;
-position: fixed;
-z-index: 1;
-padding-top: 100px;
-left: 0;
-top: 0;
-width: 100%;
-height: 100%;
-overflow: auto;
-background-color: rgb(0,0,0);
-background-color: rgba(0,0,0,0.4);
-}
+   h1 {
+   color: #c0c0c0;
+   font-family: "Inter", system-ui;
+   font-weight: 300;
+   font-style: normal;
+   margin-left: 10px;
+   font-size: 30px;
+   transition: 0.2s;
+   text-align: center;
+   cursor: default;
+   }
+
+   h2 {
+   color: #c0c0c0;
+   font-family: "Inter", system-ui;
+   font-weight: 500;
+   font-style: normal;
+   margin-left: 10px;
+   font-size: 30px;
+   transition: 0.2s;
+   text-align: center;
+   cursor: default;
+   }
+
+   h3 {
+   color: #005039;
+   font-family: "Inter", system-ui;
+   font-weight: 600;
+   font-style: normal;
+   margin-left: 10px;
+   font-size: 35px;
+   transition: 0.2s;
+   text-align: center;
+   cursor: default;
+   }
+
+   p {
+   color: #c0c0c0;
+   font-family: "Inter", sans-serif;
+   font-weight: 400;
+   font-style: normal;
+   font-size: 18px;
+   margin-left: 10px;
+   text-decoration: none;
+   cursor: default;
+   }
+
+   a {
+   text-decoration: none;
+   width: 20%;
+   cursor: default;
+   }
+
+   texthighlight {
+   color: #c0c0c0;
+   font-family: "Inter", sans-serif;
+   font-weight: 500;
+   font-style: normal;
+   font-size: 18px;
+   transition: 0.2s;
+   text-decoration: underline;
+   text-decoration-color: #c0c0c0;
+   cursor: default;
+   }
+
+   texthighlight:hover {
+   color: #005039;
+   font-family: "Inter", sans-serif;
+   font-weight: 500;
+   font-style: normal;
+   font-size: 18px;
+   text-decoration: underline;
+   text-decoration-color: #005039;
+   }
+
+   headertext {
+   color: #c0c0c0;
+   font-family: "Inter", system-ui;
+   font-weight: 500;
+   font-style: normal;
+   border-radius: 20px;
+   padding: 2px 2px;
+   transition: 0.2s;
+   display: block;
+   margin: 1px;
+   font-size: 35px;
+   text-decoration: none;
+   cursor: pointer;
+   }
+
+   headertext:hover {
+   color: #005039;
+   font-family: "Inter", system-ui;
+   font-weight: 500;
+   font-style: normal;
+   border-radius: 20px;
+   padding: 2px 2px;
+   transition: 0.2s;
+   display: block;
+   margin: 1px;
+   text-decoration: none;
+   }
+
+   headerlink {
+   color: #ffffff;
+   font-family: "Inter", sans-serif;
+   font-weight: 500;
+   font-style: normal;
+   font-size: 18px;
+   transition: 0.2s;
+   cursor: pointer;
+   }
+
+   headerlink:hover {
+   color: #005039;
+   font-family: "Inter", sans-serif;
+   font-weight: 500;
+   font-style: normal;
+   font-size: 18px;
+   }
 
 
-/* Highlight */
+   /* Button Styles */
 
 
-::-moz-selection {
-color: #ffffff;
-background: #005039;
-}
+   button {
+   color: #c0c0c0;
+   background-color: #005039;
+   border: 2px solid #5e5e5e;
+   border-radius: 20px;
+   font-family: "Inter", system-ui;
+   font-weight: 400;
+   font-style: normal;
+   padding: 10px 20px;
+   font-size: 16px;
+   transition: 0.2s;
+   margin-left: 10px;
+   display: block;
+   margin: auto;
+   width: 90%;
+   cursor: pointer;
+   }
 
-::selection {
-color: #ffffff;
-background: #005039;
-}
+   button:hover {
+   color: #005039;
+   background-color: #c0c0c0;
+   border: 2px solid #005039;
+   border-radius: 20px;
+   font-family: "Inter", system-ui;
+   font-weight: 400;
+   font-style: normal;
+   padding: 10px 20px;
+   font-size: 16px;
+   transition: 0.2s;
+   margin-left: 10px;
+   display: block;
+   margin: auto;
+   width: 90%;
+   }
 
 
-/* Random hovery thingy */
+   /* Input Styles */
 
 
-randomhoverthingy {
-background-color: #c0c0c0;
-padding-top: 15px;
-padding-bottom: 15px;
-padding-left: 15px;
-padding-right: 15px;
-width: 100%;
-transition: 2.5s;
-}
+   input {
+   color: #005039;
+   background-color: #c0c0c0;
+   border: 2px solid #005039;
+   font-family: "Inter", system-ui;
+   font-weight: 500;
+   font-style: normal;
+   border-radius: 20px;
+   padding: 10px 20px;
+   font-size: 16px;
+   transition: 0.2s;
+   margin-left: 10px;
+   display: block;
+   margin: auto;
+   width: 80%;
+   }
 
-randomhoverthingy:hover {
-background-color: #005039;
-padding-top: 15px;
-padding-bottom: 15px;
-padding-left: 15px;
-padding-right: 15px;
-width: 100%;
-}
+   input:hover {
+   color: #c0c0c0;
+   background-color: #005039;
+   border: 2px solid #c0c0c0;
+   font-family: "Inter", system-ui;
+   font-weight: 400;
+   font-style: normal;
+   border-radius: 20px;
+   margin-left: 10px;
+   margin-right: 10px;
+   display: block;
+   margin: auto;
+   width: 80%;
+   }
+
+
+   /* Collapsible Menu Styles */
+
+
+   .collapsible {
+   color: #c0c0c0;
+   background-color: #005039;
+   border: 2px solid #5e5e5e;
+   font-family: "Inter", system-ui;
+   font-weight: 400;
+   font-style: normal;
+   border-radius: 20px;
+   padding: 10px 20px;
+   font-size: 16px;
+   transition: 0.2s;
+   margin-left: 10px;
+   display: block;
+   margin: auto;
+   width: 90%;
+   }
+
+   .collapsible:hover {
+   color: #005039;
+   background-color: #c0c0c0;
+   border: 2px solid #005039;
+   border-radius: 20px;
+   margin-left: 10px;
+   margin-right: 10px;
+   display: block;
+   margin: auto;
+   width: 90%;
+   }
+
+   .content {
+   color: #c0c0c0;
+   background-color: #005039;
+   border: 2px solid #5e5e5e;
+   font-family: "Inter", system-ui;
+   font-weight: 400;
+   font-style: normal;
+   padding: 10px;
+   display: none;
+   overflow: hidden;
+   border-radius: 10px;
+   margin-left: 10px; 
+   margin-right: 10px;
+   margin-top: 10px;
+   font-size: 17px;
+   margin: auto;
+   width: 95%;
+   margin-top: 20px;
+   }
+
+   .active {
+   color: #c0c0c0;
+   background-color: #005039;
+   border: 2px solid #5e5e5e;
+   font-family: "Inter", system-ui;
+   font-weight: 400;
+   font-style: normal;
+   border-radius: 20px;
+   padding: 10px 20px;
+   font-size: 16px;
+   transition: 0.2s;
+   margin-left: 10px;
+   display: block;
+   margin: auto;
+   width: 95%;
+   }
+
+
+   /* Main Menu Styles */
+
+
+   .menuopen {
+   color: #005039;
+   font-family: "Inter", system-ui;
+   font-weight: 400;
+   font-style: normal;
+   border-radius: 20px;
+   padding: 2px 2px;
+   transition: 0.2s;
+   display: block;
+   margin: 1px;
+   }
+
+   .menucontent {
+   color: #c0c0c0;
+   font-family: "Inter", system-ui;
+   font-weight: 400;
+   font-style: normal;
+   padding: 10px;
+   display: none;
+   overflow: hidden;
+   border-radius: 10px;
+   border: 2px solid #5e5e5e;
+   font-size: 17px;
+   width: 30%;
+   padding-right: 5px;
+   }
+
+
+   /* Image Styles */
+
+
+   img {
+   border-radius: 10px;
+   display: block;
+   margin: auto;
+   height: 30%;
+   width: 30%;
+   }
+
+   /* Popup Box Styles */
+   .modal-content {
+   color: #c0c0c0;
+   background-color: #1a1a1a;
+   margin: auto;
+   padding: 20px;
+   border: 1px solid #c0c0c0;
+   border-radius: 10px;
+   width: 80%;
+   }
+
+   .close {
+   color: #ffffff;
+   float: right;
+   font-size: 28px;
+   font-weight: bold;
+   }
+
+   .close:hover,
+   .close:focus {
+   color: #005039;
+   text-decoration: none;
+   cursor: pointer;
+   }
+
+   .modal {
+   display: none;
+   position: fixed;
+   z-index: 1;
+   padding-top: 100px;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+   overflow: auto;
+   background-color: rgb(0,0,0);
+   background-color: rgba(0,0,0,0.4);
+   }
+
+
+   /* Highlight */
+
+
+   ::-moz-selection {
+   color: #c0c0c0;
+   background: #005039;
+   }
+
+   ::selection {
+   color: #c0c0c0;
+   background: #005039;
+   }
 
 </style>
+
 </head>
 
 <html>
 <body>
  
 <header>
-<br>
-<headertext type="button" class="headertext">menu</headertext>
- 
+	<headertext type="button" class="headertext"><i class="fa-solid fa-bars"></i></headertext>
 <div class="menucontent">
-<a href="https://projectcoral.xyz/"><headerlink><ion-icon name="home"></ion-icon> Home</headerlink></a>
+
+<h1>Project Clearwood</h1>
+	<a href="https://projectcoral.xyz/"><headerlink><ion-icon name="home"></ion-icon> Home</headerlink></a>
 <br><br>
-<a href="https://projectcoral.xyz/"><headerlink><ion-icon name="bag-remove"></ion-icon> Products</headerlink></a>
-<br><br>
-<a href="https://projectcoral.xyz/"><headerlink><ion-icon name="brush"></ion-icon> Design your own</headerlink></a>
+	<a href="https://projectcoral.xyz/"><headerlink><ion-icon name="bag-remove"></ion-icon> Products</headerlink></a>
 </div>
 </header>
-<h2>enter a title.</h2>
+
+<h2>Project Clearwood</h2>
+<h3>enter a title.</h3>
 <p>enter some text <texthighlight>highlightable</texthighlight></p>
 <h2>enter some text.</h2>
  
 <button type="button" class="collapsible">enter a question.</button>
 <div class="content">
-<p>
-enter some text
-</p>
+	<p>enter some text</p>
 </div>
- 
-<br>
- 
+
+
 <br><br>
-<button id="open">boom</button>
+	<button id="open">boom</button>
 <div id="myModal" class="modal">
 <div class="modal-content">
 <span class="close">&times;</span>
-<p>we bring the boom, thats what we do.</p>
+	<p>we bring the boom, thats what we do.</p>
 </div>
 </div>
+
 <br>
-<input type="input" class="input" placeholder="enter some text"></input>
+	<input type="input" class="input" placeholder="enter some text"></input>
 <br>
-<button type="button" class="button">goofy</button>
-<br><br>
-<randomhoverthingy>randomhoverthingy</randomhoverthingy>
+	<button type="button" class="button">goofy</button>
+
+
 </body>
+
+
 <script>
 var coll = document.getElementsByClassName("collapsible");
 var i;
@@ -493,6 +504,7 @@ for (i = 0; i < coll.length; i++) {
   });
 }
 </script>
+
 <script>
 var coll = document.getElementsByClassName("headertext");
 var i;
@@ -525,6 +537,5 @@ for (i = 0; i < coll.length; i++) {
     }
   }
 </script>
- 
 
 </html>
