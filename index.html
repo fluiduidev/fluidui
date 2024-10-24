@@ -1,9 +1,18 @@
+<!--
+   __     ______     __  __        __  __     ______     ______     ______     __     ______    
+  /\ \   /\  __ \   /\ \_\ \      /\ \_\ \   /\  __ \   /\  == \   /\  == \   /\ \   /\  ___\   
+ _\_\ \  \ \  __ \  \ \____ \     \ \  __ \  \ \  __ \  \ \  __<   \ \  __<   \ \ \  \ \___  \  
+/\_____\  \ \_\ \_\  \/\_____\     \ \_\ \_\  \ \_\ \_\  \ \_\ \_\  \ \_\ \_\  \ \_\  \/\_____\ 
+\/_____/   \/_/\/_/   \/_____/      \/_/\/_/   \/_/\/_/   \/_/ /_/   \/_/ /_/   \/_/   \/_____/ 
+                                                                                                
+//-->
+
 <!DOCTYPE html>
 <head>
-<title>FluidUI</title>
+ 
+<title>goofy aah</title>
+ 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
@@ -11,11 +20,12 @@
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
  
- 
 <style>
  
+
 /* Main Styles */
  
+
 body {
 background-color: #1a1a1a;
 margin: 0px;
@@ -34,7 +44,7 @@ padding: 5px 5px;
 display: block;
 margin: auto;
 }
-
+ 
 footer {
 border-radius: 10px;
 position: -webkit-sticky;
@@ -47,8 +57,10 @@ display: block;
 margin: auto;
 }
  
+
 /* Text Styles */
  
+
 h2 {
 color: #ffffff;
 font-family: "Inter", system-ui;
@@ -58,6 +70,7 @@ margin-left: 10px;
 font-size: 30px;
 transition: 0.2s;
 text-align: center;
+cursor: default;
 }
  
 h2:hover {
@@ -72,7 +85,7 @@ font-size: 30px;
 .headertext {
 color: #ffffff;
 font-family: "Inter", system-ui;
-font-weight: 700;
+font-weight: 500;
 font-style: normal;
 border-radius: 20px;
 padding: 2px 2px;
@@ -81,6 +94,22 @@ display: block;
 margin: 1px;
 text-align: center;
 font-size: 35px;
+text-decoration: none;
+cursor: pointer;
+}
+ 
+.headertext:hover {
+color: #005039;
+font-family: "Inter", system-ui;
+font-weight: 500;
+font-style: normal;
+border-radius: 20px;
+padding: 2px 2px;
+transition: 0.2s;
+display: block;
+margin: 1px;
+text-align: center;
+text-decoration: none;
 }
  
 p {
@@ -90,10 +119,14 @@ font-weight: 400;
 font-style: normal;
 font-size: 18px;
 margin-left: 10px;
+text-decoration: none;
+cursor: default;
 }
+ 
 a {
 text-decoration: none;
 width: 20%;
+cursor: default;
 }
  
 texthighlight {
@@ -103,35 +136,58 @@ font-weight: 500;
 font-style: normal;
 font-size: 18px;
 transition: 0.2s;
+text-decoration: underline;
+text-decoration-color: #c0c0c0;
+cursor: default;
 }
  
 texthighlight:hover {
-color: #a37e2c;
+color: #005039;
+font-family: "Inter", sans-serif;
+font-weight: 500;
+font-style: normal;
+font-size: 18px;
+text-decoration: underline;
+text-decoration-color: #005039;
+}
+ 
+headerlink {
+color: #ffffff;
+font-family: "Inter", sans-serif;
+font-weight: 500;
+font-style: normal;
+font-size: 18px;
+transition: 0.2s;
+cursor: pointer;
+}
+ 
+headerlink:hover {
+color: #005039;
 font-family: "Inter", sans-serif;
 font-weight: 500;
 font-style: normal;
 font-size: 18px;
 }
-
  
 /* Button Styles */
  
- 
+
 button {
 color: #ffffff;
 background-color: #005039;
 border: 2px solid #5e5e5e;
+border-radius: 20px;
 font-family: "Inter", system-ui;
 font-weight: 400;
 font-style: normal;
-border-radius: 20px;
 padding: 10px 20px;
 font-size: 16px;
 transition: 0.2s;
 margin-left: 10px;
 display: block;
 margin: auto;
-width: 95%;
+width: 90%;
+cursor: pointer;
 }
  
 button:hover {
@@ -139,83 +195,58 @@ color: #005039;
 background-color: #c0c0c0;
 border: 2px solid #005039;
 border-radius: 20px;
-margin-left: 10px;
-margin-right: 10px;
-display: block;
-margin: auto;
-width: 95%;
-}
-
-sbutton {
-color: #ffffff;
-background-color: #a37e2c;
-border: 2px solid #5e5e5e;
 font-family: "Inter", system-ui;
-font-weight: 600;
+font-weight: 400;
 font-style: normal;
-border-radius: 20px;
 padding: 10px 20px;
 font-size: 16px;
 transition: 0.2s;
 margin-left: 10px;
 display: block;
 margin: auto;
-width: 93%;
-text-align: center;
-}
-
-sbutton:hover {
-color: #005039;
-background-color: #c0c0c0;
-border: 2px solid #5e5e5e;
-font-family: "Inter", system-ui;
-font-weight: 600;
-font-style: normal;
-border-radius: 20px;
-padding: 10px 20px;
-font-size: 16px;
-transition: 0.2s;
-margin-left: 10px;
-display: block;
-margin: auto;
-width: 93%;
-text-align: center;
+width: 90%;
 }
  
+
 /* Input Styles */
  
+
 input {
+color: #005039;
+background-color: #c0c0c0;
+border: 2px solid #005039;
+font-family: "Inter", system-ui;
+font-weight: 500;
+font-style: normal;
+border-radius: 20px;
+padding: 10px 20px;
+font-size: 16px;
+transition: 0.2s;
+margin-left: 10px;
+display: block;
+margin: auto;
+width: 80%;
+}
+
+input:hover {
 color: #ffffff;
 background-color: #005039;
-border: 2px solid #5e5e5e;
+border: 2px solid #c0c0c0;
 font-family: "Inter", system-ui;
 font-weight: 400;
 font-style: normal;
 border-radius: 20px;
-padding: 10px 20px;
-font-size: 16px;
-transition: 0.2s;
-margin-left: 10px;
-display: block;
-margin: auto;
-width: 93%;
-}
- 
-input:hover {
-color: #005039;
-background-color: #c0c0c0;
-border: 2px solid #005039;
-border-radius: 20px;
 margin-left: 10px;
 margin-right: 10px;
 display: block;
 margin: auto;
-width: 93%;
+width: 80%;
 }
- 
- 
+
+
 /* Collapsible Menu Styles */
- 
+
+
 .collapsible {
 color: #ffffff;
 background-color: #005039;
@@ -230,9 +261,9 @@ transition: 0.2s;
 margin-left: 10px;
 display: block;
 margin: auto;
-width: 95%;
+width: 90%;
 }
- 
+
 .collapsible:hover {
 color: #005039;
 background-color: #c0c0c0;
@@ -242,9 +273,9 @@ margin-left: 10px;
 margin-right: 10px;
 display: block;
 margin: auto;
-width: 95%;
+width: 90%;
 }
- 
+
 .content {
 color: #ffffff;
 background-color: #005039;
@@ -265,7 +296,6 @@ width: 95%;
 margin-top: 20px;
 }
  
- 
 .active {
 color: #ffffff;
 background-color: #005039;
@@ -282,20 +312,7 @@ display: block;
 margin: auto;
 width: 95%;
 }
-
-.headertext:hover {
-color: #005039;
-font-family: "Inter", system-ui;
-font-weight: 400;
-font-style: normal;
-border-radius: 20px;
-padding: 2px 2px;
-transition: 0.2s;
-display: block;
-margin: 1px;
-text-align: center;
-}
-
+ 
 .menuopen {
 color: #005039;
 font-family: "Inter", system-ui;
@@ -349,142 +366,118 @@ border: 1px solid #c0c0c0;
 border-radius: 10px;
 width: 80%;
 }
-
+ 
 .close {
 color: #ffffff;
 float: right;
 font-size: 28px;
 font-weight: bold;
 }
-
+ 
 .close:hover,
 .close:focus {
 color: #005039;
 text-decoration: none;
 cursor: pointer;
 }
-
+ 
 .modal {
-display: none; /* Hidden by default */
-position: fixed; /* Stay in place */
-z-index: 1; /* Sit on top */
-padding-top: 100px; /* Location of the box */
+display: none;
+position: fixed;
+z-index: 1;
+padding-top: 100px;
 left: 0;
 top: 0;
-width: 100%; /* Full width */
-height: 100%; /* Full height */
-overflow: auto; /* Enable scroll if needed */
-background-color: rgb(0,0,0); /* Fallback color */
-background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+width: 100%;
+height: 100%;
+overflow: auto;
+background-color: rgb(0,0,0);
+background-color: rgba(0,0,0,0.4);
 }
+
+
+/* Highlight */
+
+
+::-moz-selection {
+color: #ffffff;
+background: #005039;
+}
+
+::selection {
+color: #ffffff;
+background: #005039;
+}
+
+
+/* Random hovery thingy */
+
+
+randomhoverthingy {
+background-color: #c0c0c0;
+padding-top: 15px;
+padding-bottom: 15px;
+padding-left: 15px;
+padding-right: 15px;
+width: 100%;
+transition: 2.5s;
+}
+
+randomhoverthingy:hover {
+background-color: #005039;
+padding-top: 15px;
+padding-bottom: 15px;
+padding-left: 15px;
+padding-right: 15px;
+width: 100%;
+}
+
 </style>
- 
 </head>
- 
- 
+
 <html>
 <body>
-
+ 
 <header>
 <br>
-<headertext type="button" class="headertext"><i class="fa-solid fa-hat-cowboy"></i></headertext>
+<headertext type="button" class="headertext">menu</headertext>
+ 
 <div class="menucontent">
-<a href="https://projectcoral.xyz/"><texthighlight><ion-icon name="home"></ion-icon> Home</texthighlight></a>
-
+<a href="https://projectcoral.xyz/"><headerlink><ion-icon name="home"></ion-icon> Home</headerlink></a>
 <br><br>
-
-<a href="https://projectcoral.xyz/"><texthighlight><ion-icon name="bag-remove"></ion-icon> Products</texthighlight></a>
-
+<a href="https://projectcoral.xyz/"><headerlink><ion-icon name="bag-remove"></ion-icon> Products</headerlink></a>
 <br><br>
-
-<a href="https://projectcoral.xyz/"><texthighlight><ion-icon name="brush"></ion-icon> Design your own</texthighlight></a>
+<a href="https://projectcoral.xyz/"><headerlink><ion-icon name="brush"></ion-icon> Design your own</headerlink></a>
 </div>
 </header>
+<h2>enter a title.</h2>
+<p>enter some text <texthighlight>highlightable</texthighlight></p>
+<h2>enter some text.</h2>
  
-<h2>Your go-to destination for UI projects.</h2>
-<p><br>
-FluidUI is a dynamic UI design company dedicated to crafting seamless user experiences for the web. With a focus on innovative design principles and the latest technological trends, we specialize in creating intuitive interfaces that not only engage users but also drive conversions. Our team of talented designers and developers collaborates closely with clients to understand their unique needs, ensuring that every project reflects their brand identity while enhancing usability.
-<br><br>
-At FluidUI, we believe that effective design goes beyond aesthetics. Our approach centers around user-centered design, where we prioritize the needs and behaviors of end-users in every project. We employ a comprehensive design process that includes research, prototyping, and user testing, enabling us to iterate on ideas and refine our solutions. Whether it's a sleek corporate website, an interactive e-commerce platform, or a captivating landing page, we are committed to delivering high-quality designs that resonate with users.
-<br><br>
-Our portfolio showcases a diverse range of projects, highlighting our versatility and expertise across various industries. We leverage the latest design tools and methodologies, ensuring our interfaces are not only visually appealing but also functional and responsive. At FluidUI, we understand that the digital landscape is constantly evolving, and we pride ourselves on staying ahead of the curve, continually adapting our strategies to meet emerging trends and technologies. Let us help you create a web experience that flows effortlessly and captivates your audience.</p>
-<br><br>
+<button type="button" class="collapsible">enter a question.</button>
+<div class="content">
+<p>
+enter some text
+</p>
+</div>
  
-<h2>Frequently asked Questions.</h2>
-
-<button type="button" class="collapsible">What services do FluidUI offer?</button>
-<div class="content">
-<p>
-FluidUI specializes in UI design for web applications, including website design, e-commerce platforms, landing pages, and interactive prototypes. We also provide user experience (UX) consulting, usability testing, and design audits.
-</p>
-</div>
-
 <br>
-
-<button type="button" class="collapsible">How does your design process work?</button>
-<div class="content">
-<p>
-Our design process is user-centered and consists of several stages: research and discovery, wireframing, prototyping, and user testing. We collaborate closely with clients throughout the process to ensure the final product aligns with their goals and user needs.
-</p>
-</div>
-
-<br>
-
-<button type="button" class="collapsible">Can you work with existing branding guidelines?</button>
-<div class="content">
-<p>
-Absolutely! We can incorporate your existing branding guidelines into our designs to ensure consistency across all platforms. Our goal is to enhance your brand identity while creating an engaging user experience.
-</p>
-</div>
-<br>
-
-<button type="button" class="collapsible">How long does a typical project take?</button>
-<div class="content">
-<p>
-Project timelines vary based on complexity and scope. On average, a standard web UI design project takes between 4 to 8 weeks. We’ll provide a detailed timeline during initial contact.
-</p>
-</div>
-<br>
-
-<button type="button" class="collapsible">How do you ensure your designs are user-friendly?</button>
-<div class="content">
-<p>
-All of our products are responsive. This means that they scale to all devices and screen sizes.
-</p>
-</div>
-<br>
-
-<button type="button" class="collapsible">How do I get started with FluidUI?</button>
-<div class="content">
-<p>
-Thats easy! You can join our Discord Server and contact one of our Sales Representitives to schedule contact with a UI designer (web developer).
-</p>
-</div>
-<br>
-
-<a href="https://projectcoral.xyz/"><sbutton>Special Button</sbutton></a>
-<br>
-
+ 
 <br><br>
-<button id="myBtn">Join Discord Server</button> <!-- button -->
+<button id="open">boom</button>
 <div id="myModal" class="modal">
-<!-- Content -->
 <div class="modal-content">
 <span class="close">&times;</span>
-<p>You can join our discord server by clicking the button below.</p>
-<a href="https://discord.gg/6snXmWTr2F"><button>Join Discord Server</button></a>
-<br>
-<p>Having trouble? You can scan the QR code below with your mobile device to join the discord server.</p>
-<img src="qrcode.png" alt="QR Code">
-<br>
-
+<p>we bring the boom, thats what we do.</p>
 </div>
 </div>
-
-
-
+<br>
+<input type="input" class="input" placeholder="enter some text"></input>
+<br>
+<button type="button" class="button">goofy</button>
+<br><br>
+<randomhoverthingy>randomhoverthingy</randomhoverthingy>
 </body>
- 
 <script>
 var coll = document.getElementsByClassName("collapsible");
 var i;
@@ -500,7 +493,6 @@ for (i = 0; i < coll.length; i++) {
   });
 }
 </script>
- 
 <script>
 var coll = document.getElementsByClassName("headertext");
 var i;
@@ -516,34 +508,23 @@ for (i = 0; i < coll.length; i++) {
   });
 }
 </script>
-
+ 
 <script>
-  // Get the modal
   var modal = document.getElementById("myModal");
-  
-  // Get the button that opens the modal
-  var btn = document.getElementById("myBtn");
-  
-  // Get the <span> element that closes the modal
+  var btn = document.getElementById("open");
   var span = document.getElementsByClassName("close")[0];
-  
-  // When the user clicks the button, open the modal 
   btn.onclick = function() {
     modal.style.display = "block";
   }
-  
-  // When the user clicks on <span> (x), close the modal
   span.onclick = function() {
     modal.style.display = "none";
   }
-  
-  // When the user clicks anywhere outside of the modal, close it
   window.onclick = function(event) {
     if (event.target == modal) {
       modal.style.display = "none";
     }
   }
-  </script>
-
+</script>
+ 
 
 </html>
